@@ -25,7 +25,8 @@ larsoft:
 
 # Block for defining stages.  Can include multiple stages
 stages:
-    # Example generation stage.  Some fields required, others optional
+
+    # Genie generation
     generation:
         # REQUIRED: name of fcl
         fcl: prodgenie_bnb_nu_cosmic_uboone.fcl
@@ -47,7 +48,81 @@ stages:
             #REQUIRED: output type
             type: sam # Can be either a sam dataset or none.  List of files is generated automatically
             #REQUIRED: output location
-            location: /data/test/generation/ # Must be a location for outputfiles
+            location: /n/holylfs/LABS/guenette_lab/production_test/generation/ # Must be a location for outputfiles
+            #OPTIONAL: skip root files - default false
+            anaonly: false
+            #OPTIONAL: output file base name.  Default is "%ifb" (input file base)
+            basename: none
+        # REQUIRED: required memory size - default 4000, units are MB
+        memory: 4000
+        # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
+        time: 06:00:00
+
+        # # OPTIONAL: extra larsoft commands
+        # # If used, entire string is added to larsoft command
+        # Not yet implemented
+        # extra_commands: none
+
+    # Example generation stage.  Some fields required, others optional
+    larg4:
+        # REQUIRED: name of fcl
+        fcl: standard_g4_spacecharge_uboone.fcl
+        # REQUIRED: number of jobs to run
+        n_jobs: 4
+        # REQUIRED: number of events per job
+        # -1 is "all events in the input file[s]" and is the default
+        events_per_job: 10
+        # REQUIRED: input definition
+        input:
+            # REQUIRED: input type
+            type: none # Can be none or a stage
+            # REQUIRED: input location
+            location: none # can be none if type is none, otherwise must be a path to ... TODO
+            #OPTIONAL: number of files per job, default == 1
+            # n_files: 1
+        # REQUIRED: output definition
+        output:
+            #REQUIRED: output type
+            type: sam # Can be either a sam dataset or none.  List of files is generated automatically
+            #REQUIRED: output location
+            location: /n/holylfs/LABS/guenette_lab/production_test/larg4/ # Must be a location for outputfiles
+            #OPTIONAL: skip root files - default false
+            anaonly: false
+            #OPTIONAL: output file base name.  Default is "%ifb" (input file base)
+            basename: none
+        # REQUIRED: required memory size - default 4000, units are MB
+        memory: 4000
+        # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
+        time: 06:00:00
+
+        # # OPTIONAL: extra larsoft commands
+        # # If used, entire string is added to larsoft command
+        # Not yet implemented
+        # extra_commands: none
+
+    # Example generation stage.  Some fields required, others optional
+    detsim:
+        # REQUIRED: name of fcl
+        fcl: standard_detsim_ddr_uboone.fcl
+        # REQUIRED: number of jobs to run
+        n_jobs: 4
+        # REQUIRED: number of events per job
+        # -1 is "all events in the input file[s]" and is the default
+        events_per_job: 10
+        # REQUIRED: input definition
+        input:
+            # REQUIRED: input type
+            type: none # Can be none or a stage
+            # REQUIRED: input location
+            location: none # can be none if type is none, otherwise must be a path to ... TODO
+            #OPTIONAL: number of files per job, default == 1
+            # n_files: 1
+        # REQUIRED: output definition
+        output:
+            #REQUIRED: output type
+            type: sam # Can be either a sam dataset or none.  List of files is generated automatically
+            #REQUIRED: output location
+            location: /n/holylfs/LABS/guenette_lab/production_test/detsim/ # Must be a location for outputfiles
             #OPTIONAL: skip root files - default false
             anaonly: false
             #OPTIONAL: output file base name.  Default is "%ifb" (input file base)
