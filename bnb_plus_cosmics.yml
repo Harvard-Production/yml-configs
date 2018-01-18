@@ -25,7 +25,7 @@ stages:
     generation:
         # REQUIRED: name of fcl
         fcl:
-            - prodgenie_bnb_nu_cosmic_uboone.fcl
+            - /n/holylfs/LABS/guenette_lab/production/fcl/prodgenie_bnb_nu_cosmic_uboone_harvard.fcl
             - standard_g4_spacecharge_uboone.fcl
             - standard_detsim_ddr_uboone.fcl
         # REQUIRED: number of jobs to run
