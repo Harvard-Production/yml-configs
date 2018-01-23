@@ -22,7 +22,7 @@ larsoft:
 stages:
 
     # Genie generation
-    generation:
+    - generation:
         # REQUIRED: name of fcl
         fcl:
             - /n/holylfs/LABS/guenette_lab/production/fcl/prodgenie_bnb_nu_cosmic_uboone_harvard.fcl
