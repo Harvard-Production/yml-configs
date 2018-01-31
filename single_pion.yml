@@ -1,7 +1,7 @@
 # Global header information:
-name: "mcc8.6_bnb_plus_cosmics"
+name: "mcc8.6_single_pion"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics
+top_dir: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/single_pion/
 
 # Block for defining the larsoft setup.  All fields required
 larsoft:
@@ -25,13 +25,13 @@ stages:
     - generation:
         # REQUIRED: name of fcl
         fcl:
-            - /n/holylfs/LABS/guenette_lab/production/fcl/prodgenie_bnb_nu_cosmic_uboone_harvard.fcl
+            - /n/holylfs/LABS/guenette_lab/production/fcl/prodsingle_pions_uboone_harvard.fcl
             - standard_g4_spacecharge_uboone.fcl
             - standard_detsim_uboone.fcl
             - reco_uboone_mcc8_driver_stage1_reduced.fcl
             - reco_uboone_mcc8_driver_stage2_reduced.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 10
+        n_jobs: 100
         # REQUIRED: number of events per job
         # -1 is "all events in the input file[s]" and is the default
         events_per_job: 100
@@ -53,7 +53,7 @@ stages:
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
-            location: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics/ # Must be a location for outputfiles
+            location: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/single_pion/ # Must be a location for outputfiles
             # The following lines are not yet implemented
             #REQUIRED: skip root files - default false
             anaonly: false
