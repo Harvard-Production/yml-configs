@@ -1,7 +1,7 @@
 # Global header information:
 name: "mcc8.6_bnb_plus_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics
 
 # Block for defining the larsoft setup.  All fields required
 larsoft:
@@ -31,7 +31,7 @@ stages:
             - reco_uboone_mcc8_driver_stage1_reduced.fcl
             - reco_uboone_mcc8_driver_stage2_reduced.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 10
+        n_jobs: 500
         # REQUIRED: number of events per job
         # -1 is "all events in the input file[s]" and is the default
         events_per_job: 100
@@ -53,8 +53,10 @@ stages:
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
-            location: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics/ # Must be a location for outputfiles
+            location: *top_dir # Must be a location for outputfiles, will add stage name if not there
             # The following lines are not yet implemented
+            #REQUIRED: dataset name (will be stored in this projects database)
+            dataset: bnb_plus_cosmics_mcc8.6
             #REQUIRED: skip root files - default false
             anaonly: false
 
