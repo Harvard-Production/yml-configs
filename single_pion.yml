@@ -1,7 +1,7 @@
 # Global header information:
 name: "mcc8.6_single_pion"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/single_pion/
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/single_pion/
 
 # Block for defining the larsoft setup.  All fields required
 larsoft:
@@ -53,8 +53,10 @@ stages:
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
-            location: /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/single_pion/ # Must be a location for outputfiles
+            location: *top_dir # Must be a location for outputfiles, will add stage name if not there
             # The following lines are not yet implemented
+            #REQUIRED: dataset name (will be stored in this projects database)
+            dataset: mcc8.6_single_pion
             #REQUIRED: skip root files - default false
             anaonly: false
 
