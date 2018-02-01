@@ -21,7 +21,7 @@ larsoft:
 # Block for defining stages.  Can include multiple stages
 stages:
 
-    # Genie generation
+    # single pion generation and reconstruction
     - generation:
         # REQUIRED: name of fcl
         fcl:
@@ -65,3 +65,42 @@ stages:
         # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
         time: 06:00:00
 
+    # anatree
+    - anatree:
+        # REQUIRED: name of fcl
+        fcl:
+            - standard_ana_uboone.fcl
+        # REQUIRED: number of jobs to run
+        n_jobs: 10
+        # REQUIRED: number of events per job
+        # -1 is "all events in the input file[s]" and is the default
+        events_per_job: 10
+        # REQUIRED: input definition
+        input:
+            # REQUIRED: input type
+            dataset: mcc8.6_single_pion # Can be none or a name
+
+            # REQUIRED: input stage
+            # can be none or a stage of a data set:
+            stage: generation
+
+            # REQUIRED: input location
+            # can be none if dataset is none or an internal stage, otherwise must database file
+            dbfile: none
+
+            #OPTIONAL: number of files per job, default == 1
+            # n_files: 1
+        # REQUIRED: output definition
+        output:
+            #REQUIRED: output location
+            location: *top_dir # Must be a location for outputfiles, will add stage name if not there
+            # The following lines are not yet implemented
+            #REQUIRED: dataset name (will be stored in this projects database)
+            dataset: mcc8.6_single_pion
+            #REQUIRED: skip root files - default false
+            anaonly: false
+
+        # REQUIRED: required memory size - default 4000, units are MB
+        memory: 4000
+        # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
+        time: 06:00:00
