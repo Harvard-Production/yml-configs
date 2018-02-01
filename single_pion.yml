@@ -98,7 +98,7 @@ stages:
             #REQUIRED: dataset name (will be stored in this projects database)
             dataset: mcc8.6_single_pion
             #REQUIRED: skip root files - default false
-            anaonly: false
+            anaonly: true
 
         # REQUIRED: required memory size - default 4000, units are MB
         memory: 4000
