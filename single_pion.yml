@@ -89,7 +89,7 @@ stages:
             dbfile: none
 
             #OPTIONAL: number of files per job, default == 1
-            # n_files: 1
+            n_files: 5
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
@@ -98,7 +98,7 @@ stages:
             #REQUIRED: dataset name (will be stored in this projects database)
             dataset: mcc8.6_single_pion
             #REQUIRED: skip root files - default false
-            anaonly: true
+            anaonly: True
 
         # REQUIRED: required memory size - default 4000, units are MB
         memory: 4000
