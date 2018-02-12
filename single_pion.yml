@@ -38,15 +38,7 @@ stages:
         # REQUIRED: input definition
         input:
             # REQUIRED: input type
-            dataset: none # Can be none or a name
-
-            # REQUIRED: input stage
-            # can be none or a stage of a data set:
-            stage: none
-
-            # REQUIRED: input location
-            # can be none if dataset is none or an internal stage, otherwise must database file
-            dbfile: none
+            dataset: none # Can be none or a list of names
 
             #OPTIONAL: number of files per job, default == 1
             # n_files: 1
