@@ -49,7 +49,7 @@ stages:
             location: *top_dir
             # The following lines are not yet implemented
             #REQUIRED: dataset name (will be stored in this projects database)
-            dataset: bnb_plus_cosmics_mcc8.6_reco2
+            dataset: bnb_plus_cosmics_mcc86_reco2
             #REQUIRED: skip root files - default false
             anaonly: false
 
