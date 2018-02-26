@@ -25,7 +25,7 @@ stages:
     - generation:
         # REQUIRED: name of fcl
         fcl:
-            - prod_nue_genie_CC_larg4_detsim_sbnd.fcl
+            - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         # REQUIRED: number of jobs to run
         n_jobs: 5
         # REQUIRED: number of events per job
@@ -45,7 +45,7 @@ stages:
             location: *top_dir
             # The following lines are not yet implemented
             #REQUIRED: dataset name (will be stored in this projects database)
-            dataset: sbnd_dl_nueCC_larsoft
+            dataset: sbnd_dl_nueCC_cosmics_larsoft
             #REQUIRED: skip root files - default false
             anaonly: false
 
