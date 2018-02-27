@@ -27,7 +27,7 @@ stages:
         fcl:
             - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 5
+        n_jobs: 400
         # REQUIRED: number of events per job
         # -1 is "all events in the input file[s]" and is the default
         events_per_job: 100
