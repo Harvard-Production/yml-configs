@@ -1,7 +1,7 @@
 # Global header information:
-name: "sbnd_dl_nueCC"
+name: "sbnd_dl_NC_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/nue_CC
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/NC_cosmics
 
 # Block for defining the larsoft setup.  All fields required
 larsoft:
