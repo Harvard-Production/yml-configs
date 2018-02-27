@@ -31,7 +31,7 @@ stages:
             - reco_uboone_mcc8_driver_stage1_reduced.fcl
             - reco_uboone_mcc8_driver_stage2_reduced.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 6000
+        n_jobs: 15000
         # OPTIONAL: maximum number of jobs to run simultaneously
         max_concurrent_jobs: 450
         # REQUIRED: number of events per job
