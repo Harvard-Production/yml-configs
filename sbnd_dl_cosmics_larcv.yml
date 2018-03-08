@@ -3,8 +3,9 @@ name: "sbnd_dl_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
 top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/cosmics_larcv
 
-# Block for defining the larsoft setup.  All fields required
-gallery:
+# Block for defining the software setup.  All fields required
+software:
+    type: gallery
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
         - /n/holylfs/LABS/guenette_lab/software/larsoft
@@ -26,7 +27,7 @@ stages:
     - larcv:
         # REQUIRED: name of fcl
         fcl:
-            - prod_cosmics_larg4_detsim_sbnd.fcl
+            - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         # REQUIRED: number of jobs to run
         n_jobs: 400
         # OPTIONAL: maximum number of jobs to run simultaneously

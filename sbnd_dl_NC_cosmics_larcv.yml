@@ -3,8 +3,9 @@ name: "sbnd_dl_NC_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
 top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/NC_cosmics_larcv
 
-# Block for defining the larsoft setup.  All fields required
-gallery:
+# Block for defining the software setup.  All fields required
+software:
+    type: gallery
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
         - /n/holylfs/LABS/guenette_lab/software/larsoft

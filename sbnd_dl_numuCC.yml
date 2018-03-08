@@ -4,7 +4,8 @@ name: "sbnd_dl_numuCC"
 top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/numu_CC
 
 # Block for defining the larsoft setup.  All fields required
-larsoft:
+software:
+    type: larsoft
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
         - /n/holylfs/LABS/guenette_lab/software/larsoft
@@ -17,7 +18,6 @@ larsoft:
     version: v06_67_00
     # REQUIRED: Qualifiers to use for this product
     quals: e15:prof
-
 # Block for defining stages.  Can include multiple stages
 stages:
 
