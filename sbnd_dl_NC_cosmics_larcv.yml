@@ -22,8 +22,7 @@ gallery:
 # Block for defining stages.  Can include multiple stages
 stages:
 
-    # Genie generation
-    - generation:
+    - larcv:
         # REQUIRED: name of fcl
         fcl:
             - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
