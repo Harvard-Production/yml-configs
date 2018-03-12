@@ -11,7 +11,7 @@ software:
         - /n/holylfs/LABS/guenette_lab/software/larsoft
     # OPTIONAL: set up additional local product areas:
     setup_scripts:
-        - /n/holylfs/LABS/guenette_lab/users/cadams/larcv/configure.sh
+        - /n/holylfs/LABS/guenette_lab/users/cadams/larcv2/configure.sh
         - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/config/setup.sh
     # REQUIRED: Specific product to set up (larsoft, uboonecode, sbndcode, etc)
     product: larsoftobj
