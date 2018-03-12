@@ -40,7 +40,7 @@ stages:
             dataset: sbnd_dl_NC_cosmics_larsoft # Can be none or a name
 
             #OPTIONAL: number of files per job, default == 1
-            n_files: 1
+            n_files: 2
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
@@ -50,7 +50,7 @@ stages:
             #REQUIRED: dataset name (will be stored in this projects database)
             dataset: sbnd_dl_NC_cosmics_larcv
             #REQUIRED: skip root files - default false
-            anaonly: false
+            anaonly: true
 
         # REQUIRED: required memory size - default 4000, units are MB
         memory: 4000
