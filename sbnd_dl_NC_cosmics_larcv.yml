@@ -40,7 +40,7 @@ stages:
             dataset: sbnd_dl_NC_cosmics_larsoft # Can be none or a name
 
             #OPTIONAL: number of files per job, default == 1
-            n_files: 2
+            n_files: 10
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
