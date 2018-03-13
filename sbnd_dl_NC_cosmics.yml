@@ -27,8 +27,10 @@ stages:
         # REQUIRED: name of fcl
         fcl:
             - prod_genie_NC_cosmics_larg4_detsim_sbnd.fcl
-        # REQUIRED: number of jobs to run
+        # REQUIRED: number of jobs to run (ignored for makeup)
         n_jobs: 400
+        # OPTIONAL, used to calculate number of makeup jobs
+        event_target: 15000
         # OPTIONAL: maximum number of jobs to run simultaneously
         max_concurrent_jobs: 50
         # REQUIRED: number of events per job

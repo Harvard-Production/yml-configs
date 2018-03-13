@@ -29,6 +29,8 @@ stages:
             - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         # REQUIRED: number of jobs to run
         n_jobs: 400
+        # OPTIONAL, used to calculate number of makeup jobs
+        event_target: 15000
         # OPTIONAL: maximum number of jobs to run simultaneously
         max_concurrent_jobs: 50
         # REQUIRED: number of events per job
