@@ -1,10 +1,11 @@
 # Global header information:
 name: "mcc8.6_bnb_plus_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics3
 
 # Block for defining the larsoft setup.  All fields required
-larsoft:
+software:
+    type: larsoft
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
         - /n/holylfs/LABS/guenette_lab/software/larsoft
@@ -31,7 +32,7 @@ stages:
             - reco_uboone_mcc8_driver_stage1_reduced.fcl
             - reco_uboone_mcc8_driver_stage2_reduced.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 15000
+        n_jobs: 7000
         # OPTIONAL: maximum number of jobs to run simultaneously
         max_concurrent_jobs: 450
         # REQUIRED: number of events per job
