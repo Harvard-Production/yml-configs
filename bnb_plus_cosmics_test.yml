@@ -59,5 +59,5 @@ stages:
         # REQUIRED: required memory size - default 4000, units are MB
         memory: 4000
         # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
-        time: 12:00:00
-
+        # Use quotes!
+        time: "6:00:00"
