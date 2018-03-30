@@ -1,7 +1,7 @@
 # Global header information:
 name: "sbnd_dl_NC"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/numu_ccinc
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/users/cadams/numu_ccinc
 
 # Block for defining the larsoft setup.  All fields required
 software:
@@ -9,12 +9,12 @@ software:
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
         - /n/holylfs/LABS/guenette_lab/software/larsoft
-    local_areas:
-        - /n/holylfs/LABS/guenette_lab/users/cadams/marco/larsoft_dev/localProducts_larsoft_v06_26_01_09_e10_prof/
+    # local_areas:
+        # - /n/holylfs/LABS/guenette_lab/users/cadams/marco/larsoft_dev/localProducts_larsoft_v06_26_01_09_e10_prof/
     # REQUIRED: Specific product to set up (larsoft, uboonecode, sbndcode, etc)
     product: uboonecode
     # REQUIRED: Version of product to set up
-    version: v06_26_01_10
+    version: v06_26_01_13
     # REQUIRED: Qualifiers to use for this product
     quals: e10:prof
 
@@ -52,6 +52,7 @@ stages:
             dataset: sbnd_dl_NC_larsoft
             #REQUIRED: skip root files - default false
             anaonly: true
+            ana_name: "ubxsec_output_mc_bnbcosmic"
 
         # REQUIRED: required memory size - default 4000, units are MB
         memory: 6000
