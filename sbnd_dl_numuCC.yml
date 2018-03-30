@@ -1,0 +1,60 @@
+# Global header information:
+name: "sbnd_dl_numuCC"
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/numu_CC
+
+# Block for defining the larsoft setup.  All fields required
+software:
+    type: larsoft
+    # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
+    product_areas:
+        - /n/holylfs/LABS/guenette_lab/software/larsoft
+    # OPTIONAL: set up additional local product areas:
+    local_areas:
+        - /n/holylfs/LABS/guenette_lab/users/cadams/sbndcode/localProducts_larsoft_v06_67_00_e15_prof
+    # REQUIRED: Specific product to set up (larsoft, uboonecode, sbndcode, etc)
+    product: sbndcode
+    # REQUIRED: Version of product to set up
+    version: v06_67_00
+    # REQUIRED: Qualifiers to use for this product
+    quals: e15:prof
+# Block for defining stages.  Can include multiple stages
+stages:
+
+    # Genie generation
+    - generation:
+        # REQUIRED: name of fcl
+        fcl:
+            - prod_genie_CC_larg4_detsim_sbnd.fcl
+        # REQUIRED: number of jobs to run
+        n_jobs: 400
+        # OPTIONAL, used to calculate number of makeup jobs
+        event_target: 15000
+        # OPTIONAL: maximum number of jobs to run simultaneously
+        max_concurrent_jobs: 50
+        # REQUIRED: number of events per job
+        # -1 is "all events in the input file[s]" and is the default
+        events_per_job: 100
+        # REQUIRED: input definition
+        input:
+            # REQUIRED: input type
+            dataset: none # Can be none or a name
+
+            #OPTIONAL: number of files per job, default == 1
+            # n_files: 1
+        # REQUIRED: output definition
+        output:
+            #REQUIRED: output location
+            # Must be a location for outputfiles, will add stage name if not there
+            location: *top_dir
+            # The following lines are not yet implemented
+            #REQUIRED: dataset name (will be stored in this projects database)
+            dataset: sbnd_dl_numuCC_larsoft
+            #REQUIRED: skip root files - default false
+            anaonly: false
+
+        # REQUIRED: required memory size - default 4000, units are MB
+        memory: 4000
+        # REQUIRED: time limit.  Default 6 hours.  Format HH:MM:SS
+        time: 06:00:00
+
