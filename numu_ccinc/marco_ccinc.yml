@@ -49,7 +49,7 @@ stages:
             location: *top_dir
             # The following lines are not yet implemented
             #REQUIRED: dataset name (will be stored in this projects database)
-            dataset: sbnd_dl_NC_larsoft
+            dataset: marco_ubxsec_ana
             #REQUIRED: skip root files - default false
             anaonly: true
             ana_name: "ubxsec_output_mc_bnbcosmic"
