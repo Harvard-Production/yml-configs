@@ -1,5 +1,5 @@
 # Global header information:
-name: "sbnd_dl_NC"
+name: "numu_ccinc"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
 top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/users/cadams/numu_ccinc
 
