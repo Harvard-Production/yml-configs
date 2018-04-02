@@ -29,19 +29,19 @@ stages:
         # REQUIRED: number of jobs to run
         n_jobs: 50
         # OPTIONAL, used to calculate number of makeup jobs
-        event_target: 50
+        event_target: 2500
         # OPTIONAL: maximum number of jobs to run simultaneously
-        max_concurrent_jobs: 50
+        # max_concurrent_jobs: 50
         # REQUIRED: number of events per job
         # -1 is "all events in the input file[s]" and is the default
-        events_per_job: 1
+        events_per_job: -1
         # REQUIRED: input definition
         input:
             # REQUIRED: input type
             dataset: bnb_plus_cosmics_mcc86_reco2 # Can be none or a name
 
             #OPTIONAL: number of files per job, default == 1
-            n_files: 1
+            n_files: 10
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
