@@ -4,7 +4,7 @@ name: "sbnd_dl_larsoft_generation"
 top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft
 
 # Block for defining the larsoft setup. Reference a file
-software: "/n/holylfs/LABS/guenette_lab/production/yml-config/sbnd_dl/larsoft.yml"
+software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/sbnd_dl/larsoft.yml"
 
 # Block for defining stages.  Can include multiple stages
 stages:

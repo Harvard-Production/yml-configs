@@ -4,7 +4,7 @@ name: "sbnd_dl_larcv"
 top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv
 
 
-software: "/n/holylfs/LABS/guenette_lab/production/yml-config/sbnd_dl/gallery.yml"
+software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/sbnd_dl/gallery.yml"
 
 # Block for defining stages.  Can include multiple stages
 stages:
