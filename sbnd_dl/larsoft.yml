@@ -1,0 +1,13 @@
+type: larsoft
+# REQUIRED: List of product areas.  All must contain 'setup' and all will be called
+product_areas:
+    - /n/holylfs/LABS/guenette_lab/software/larsoft
+# OPTIONAL: set up additional local product areas:
+local_areas:
+    - /n/holylfs/LABS/guenette_lab/users/cadams/sbndcode/localProducts_larsoft_v06_67_00_e15_prof
+# REQUIRED: Specific product to set up (larsoft, uboonecode, sbndcode, etc)
+product: sbndcode
+# REQUIRED: Version of product to set up
+version: v06_67_00
+# REQUIRED: Qualifiers to use for this product
+quals: e15:prof

@@ -1,0 +1,130 @@
+# Global header information:
+name: "sbnd_dl_larsoft_generation"
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft
+
+# Block for defining the larsoft setup. Reference a file
+software: "/n/holylfs/LABS/guenette_lab/production/yml-config/sbnd_dl/larsoft.yml"
+
+# Block for defining stages.  Can include multiple stages
+stages:
+
+    - cosmics:
+        fcl:
+            - prod_cosmics_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/cosmics
+            dataset: sbnd_dl_cosmics_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - NC:
+        fcl:
+            - prod_genie_NC_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC
+            dataset: sbnd_dl_NC_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - NC_cosmics:
+        fcl:
+            - prod_genie_NC_cosmics_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_cosmics
+            dataset: sbnd_dl_NC_cosmics_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - nueCC:
+        fcl:
+            - prod_nue_genie_CC_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC
+            dataset: sbnd_dl_nueCC_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - nueCC_cosmics:
+        fcl:
+            - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_cosmics
+            dataset: sbnd_dl_nueCC_cosmics_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - numuCC:
+        fcl:
+            - prod_genie_CC_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC
+            dataset: sbnd_dl_numuCC_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
+    - numuCC_cosmics:
+        fcl:
+            - prod_genie_CC_cosmics_larg4_detsim_sbnd.fcl
+        n_jobs: 400
+        event_target: 20000
+        max_concurrent_jobs: 50
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics
+            dataset: sbnd_dl_numuCC_cosmics_larsoft
+            anaonly: false
+        memory: 4000
+        time: 06:00:00
+
