@@ -27,9 +27,9 @@ stages:
         fcl:
             - run_ubxsec_mc_bnbcosmic.fcl
         # REQUIRED: number of jobs to run
-        n_jobs: 50
+        n_jobs: 198
         # OPTIONAL, used to calculate number of makeup jobs
-        event_target: 2500
+        event_target: 49300
         # OPTIONAL: maximum number of jobs to run simultaneously
         # max_concurrent_jobs: 50
         # REQUIRED: number of events per job
@@ -38,10 +38,10 @@ stages:
         # REQUIRED: input definition
         input:
             # REQUIRED: input type
-            dataset: bnb_plus_cosmics_mcc86_reco2 # Can be none or a name
+            dataset: bnb_plus_cosmics_mcc86_reco2_dev_high_mem # Can be none or a name
 
             #OPTIONAL: number of files per job, default == 1
-            n_files: 10
+            n_files: 5
         # REQUIRED: output definition
         output:
             #REQUIRED: output location
@@ -49,7 +49,7 @@ stages:
             location: *top_dir
             # The following lines are not yet implemented
             #REQUIRED: dataset name (will be stored in this projects database)
-            dataset: marco_ubxsec_ana
+            dataset: marco_ubxsec_ana_dev_high_mem
             #REQUIRED: skip root files - default false
             anaonly: true
             ana_name: "ubxsec_output_mc_bnbcosmic"
