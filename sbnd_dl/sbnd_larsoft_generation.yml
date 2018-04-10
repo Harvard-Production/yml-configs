@@ -20,7 +20,7 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/cosmics
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/cosmics2
             dataset: sbnd_dl_cosmics_larsoft
             anaonly: false
         memory: 8000
@@ -37,7 +37,7 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC2
             dataset: sbnd_dl_NC_larsoft
             anaonly: false
         memory: 4000
@@ -71,7 +71,7 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC2
             dataset: sbnd_dl_nueCC_larsoft
             anaonly: false
         memory: 4000
@@ -105,7 +105,7 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC2
             dataset: sbnd_dl_numuCC_larsoft
             anaonly: false
         memory: 4000
