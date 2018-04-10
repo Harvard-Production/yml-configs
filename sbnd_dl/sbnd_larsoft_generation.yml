@@ -12,7 +12,7 @@ stages:
     - cosmics:
         fcl:
             - prod_cosmics_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 203
         event_target: 20000
         max_concurrent_jobs: 100
         events_per_job: 50
@@ -23,13 +23,13 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/cosmics
             dataset: sbnd_dl_cosmics_larsoft
             anaonly: false
-        memory: 4000
+        memory: 8000
         time: 06:00:00
 
     - NC:
         fcl:
             - prod_genie_NC_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 524
         event_target: 20000
         max_concurrent_jobs: 100
         events_per_job: 50
@@ -63,7 +63,7 @@ stages:
     - nueCC:
         fcl:
             - prod_nue_genie_CC_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 550
         event_target: 20000
         max_concurrent_jobs: 100
         events_per_job: 50
@@ -97,7 +97,7 @@ stages:
     - numuCC:
         fcl:
             - prod_genie_CC_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 968
         event_target: 20000
         max_concurrent_jobs: 100
         events_per_job: 50
