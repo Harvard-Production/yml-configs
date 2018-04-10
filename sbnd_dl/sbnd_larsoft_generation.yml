@@ -57,7 +57,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_cosmics
             dataset: sbnd_dl_NC_cosmics_larsoft
             anaonly: false
-        memory: 4000
+        memory: 8000
         time: 06:00:00
 
     - nueCC:
@@ -91,7 +91,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_cosmics
             dataset: sbnd_dl_nueCC_cosmics_larsoft
             anaonly: false
-        memory: 4000
+        memory: 8000
         time: 06:00:00
 
     - numuCC:
@@ -125,6 +125,6 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_larsoft
             anaonly: false
-        memory: 4000
+        memory: 8000
         time: 06:00:00
 
