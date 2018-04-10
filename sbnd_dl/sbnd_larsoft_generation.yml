@@ -14,7 +14,7 @@ stages:
             - prod_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -31,7 +31,7 @@ stages:
             - prod_genie_NC_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -48,7 +48,7 @@ stages:
             - prod_genie_NC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -65,7 +65,7 @@ stages:
             - prod_nue_genie_CC_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -82,7 +82,7 @@ stages:
             - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -99,7 +99,7 @@ stages:
             - prod_genie_CC_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
@@ -116,7 +116,7 @@ stages:
             - prod_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 400
         event_target: 20000
-        max_concurrent_jobs: 50
+        max_concurrent_jobs: 100
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
