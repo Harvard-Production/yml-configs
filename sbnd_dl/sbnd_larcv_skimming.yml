@@ -12,12 +12,12 @@ stages:
     - cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 81
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_cosmics_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/cosmics
             dataset: sbnd_dl_cosmics_larcv
@@ -28,12 +28,12 @@ stages:
     - NC:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 179
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_NC_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/NC
             dataset: sbnd_dl_NC_larcv
@@ -44,12 +44,12 @@ stages:
     - NC_cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 80
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_NC_cosmics_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/NC_cosmics
             dataset: sbnd_dl_NC_cosmics_larcv
@@ -60,12 +60,12 @@ stages:
     - nueCC:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 184
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_nueCC_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/nueCC
             dataset: sbnd_dl_nueCC_larcv
@@ -76,12 +76,12 @@ stages:
     - nueCC_cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 80
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_nueCC_cosmics_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/nueCC_cosmics
             dataset: sbnd_dl_nueCC_cosmics_larcv
@@ -92,12 +92,12 @@ stages:
     - numuCC:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 268
         event_target: 20000
         events_per_job: -1
         input:
             dataset: sbnd_dl_numuCC_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC
             dataset: sbnd_dl_numuCC_larcv
@@ -113,7 +113,7 @@ stages:
         events_per_job: -1
         input:
             dataset: sbnd_dl_numuCC_cosmics_larsoft # Can be none or a name
-            n_files: 10
+            n_files: 5
         output:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_larcv
