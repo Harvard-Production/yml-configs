@@ -46,15 +46,15 @@ stages:
     - NC_cosmics:
         fcl:
             - prod_genie_NC_cosmics_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 554
         event_target: 20000
-        max_concurrent_jobs: 100
+        max_concurrent_jobs: 200
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_cosmics
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_cosmics2
             dataset: sbnd_dl_NC_cosmics_larsoft
             anaonly: false
         memory: 8000
@@ -80,15 +80,15 @@ stages:
     - nueCC_cosmics:
         fcl:
             - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 554
         event_target: 20000
-        max_concurrent_jobs: 100
+        max_concurrent_jobs: 200
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_cosmics
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_cosmics2
             dataset: sbnd_dl_nueCC_cosmics_larsoft
             anaonly: false
         memory: 8000
@@ -114,15 +114,15 @@ stages:
     - numuCC_cosmics:
         fcl:
             - prod_genie_CC_cosmics_larg4_detsim_sbnd.fcl
-        n_jobs: 400
+        n_jobs: 521
         event_target: 20000
-        max_concurrent_jobs: 100
+        max_concurrent_jobs: 200
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics2
             dataset: sbnd_dl_numuCC_cosmics_larsoft
             anaonly: false
         memory: 8000
