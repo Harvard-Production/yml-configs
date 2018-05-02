@@ -1,7 +1,7 @@
 # Global header information:
 name: "sbnd_dl_larsoft_generation"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft
+top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft2
 
 # Block for defining the larsoft setup. Reference a file
 software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/sbnd_dl/larsoft.yml"
