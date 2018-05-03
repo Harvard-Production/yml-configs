@@ -58,7 +58,7 @@ stages:
             dataset: sbnd_dl_NC_cosmics_larsoft
             anaonly: false
         memory: 8000
-        time: 06:00:00
+        time: 48:00:00
 
     - nueCC:
         fcl:
@@ -92,7 +92,7 @@ stages:
             dataset: sbnd_dl_nueCC_cosmics_larsoft
             anaonly: false
         memory: 8000
-        time: 06:00:00
+        time: 48:00:00
 
     - numuCC:
         fcl:
@@ -126,5 +126,5 @@ stages:
             dataset: sbnd_dl_numuCC_cosmics_larsoft
             anaonly: false
         memory: 8000
-        time: 06:00:00
+        time: 48:00:00
 
