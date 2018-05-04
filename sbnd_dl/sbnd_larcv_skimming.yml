@@ -44,7 +44,7 @@ stages:
     - NC_cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 80
+        n_jobs: 182
         event_target: 20000
         events_per_job: -1
         input:
@@ -76,7 +76,7 @@ stages:
     - nueCC_cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 80
+        n_jobs: 184
         event_target: 20000
         events_per_job: -1
         input:
@@ -108,7 +108,7 @@ stages:
     - numuCC_cosmics:
         fcl:
           - /n/holylfs/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 40
+        n_jobs: 177
         event_target: 20000
         events_per_job: -1
         input:
