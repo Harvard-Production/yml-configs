@@ -14,7 +14,7 @@ stages:
             - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD_Tl.fcl
         n_jobs: 5
         max_concurrent_jobs: 200
-        events_per_job: 25
+        events_per_job: 5
         input:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_nexus # Can be none or a name
             # n_files: 1
