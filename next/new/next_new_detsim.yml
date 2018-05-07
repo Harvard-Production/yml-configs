@@ -20,7 +20,7 @@ stages:
             # n_files: 1
         output:
             location: /n/holylfs/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/Tl
-            dataset: sbnd_dl_cosmics_larsoft
+            dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_detsim
             anaonly: false
         memory: 4000
         time: 06:00:00
