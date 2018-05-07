@@ -115,7 +115,7 @@ stages:
             dataset: sbnd_dl_numuCC_cosmics_larsoft # Can be none or a name
             n_files: 5
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics
+            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_larcv
             anaonly: true
         memory: 4000
