@@ -9,10 +9,10 @@ software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/next/new/artnext.
 # Block for defining stages.  Can include multiple stages
 stages:
 
-    - cosmics:
+    - detsim:
         fcl:
             - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD_Tl.fcl
-        n_jobs: 180
+        n_jobs: 5
         max_concurrent_jobs: 200
         events_per_job: 25
         input:
