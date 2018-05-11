@@ -22,6 +22,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/cosmics
             dataset: sbnd_dl_cosmics_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -38,6 +39,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC
             dataset: sbnd_dl_NC_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -54,6 +56,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC_cosmics
             dataset: sbnd_dl_NC_cosmics_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -70,6 +73,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC
             dataset: sbnd_dl_nueCC_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -86,6 +90,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC_cosmics
             dataset: sbnd_dl_nueCC_cosmics_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -102,6 +107,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC
             dataset: sbnd_dl_numuCC_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
@@ -118,6 +124,7 @@ stages:
             location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_anatree
             anaonly: true
+            ana_name: 'anatree'
         memory: 4000
         time: 06:00:00
 
