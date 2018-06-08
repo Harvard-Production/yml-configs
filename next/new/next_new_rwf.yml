@@ -12,10 +12,10 @@ stages:
     - tl:
         fcl:
             - /n/holylfs/LABS/guenette_lab/production/fcl/next/create_rwf_template.conf
-        n_jobs: 5
+        n_jobs: 165
         city: diomira
         max_concurrent_jobs: 200
-        events_per_job: 25
+        events_per_job: -1
         input:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_detsim # Can be none or a name
             # n_files: 1
@@ -30,10 +30,10 @@ stages:
     - cs:
         fcl:
             - /n/holylfs/LABS/guenette_lab/production/fcl/next/create_rwf_template.conf
-        n_jobs: 5
+        n_jobs: 60
         city: diomira
         max_concurrent_jobs: 200
-        events_per_job: 25
+        events_per_job: -1
         input:
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_detsim # Can be none or a name
             # n_files: 1
