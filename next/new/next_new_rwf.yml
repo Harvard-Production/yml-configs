@@ -15,7 +15,7 @@ stages:
         n_jobs: 165
         city: diomira
         max_concurrent_jobs: 200
-        events_per_job: -1
+        events_per_job: 41000
         input:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_detsim # Can be none or a name
             # n_files: 1
@@ -33,7 +33,7 @@ stages:
         n_jobs: 60
         city: diomira
         max_concurrent_jobs: 200
-        events_per_job: -1
+        events_per_job: 22000
         input:
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_detsim # Can be none or a name
             # n_files: 1
