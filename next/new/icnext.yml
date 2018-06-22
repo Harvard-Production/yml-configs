@@ -1,4 +1,4 @@
 type: ic
 # REQUIRED: Setup script
 setup_scripts:
-    - /n/holylfs/LABS/guenette_lab/users/cadams/next/setup.sh
+    - /n/holylfs02/LABS/guenette_lab/users/cadams/next/setup.sh

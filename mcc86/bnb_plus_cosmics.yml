@@ -1,14 +1,14 @@
 # Global header information:
 name: "mcc8.6_bnb_plus_cosmics"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: &top_dir /n/holylfs/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics3
+top_dir: &top_dir /n/holylfs02/LABS/guenette_lab/data/production/mcc8.6/bnb_plus_cosmics3
 
 # Block for defining the larsoft setup.  All fields required
 software:
     type: larsoft
     # REQUIRED: List of product areas.  All must contain 'setup' and all will be called
     product_areas:
-        - /n/holylfs/LABS/guenette_lab/software/larsoft
+        - /n/holylfs02/LABS/guenette_lab/software/larsoft
     # OPTIONAL: set up additional local product areas:
     # local_areas:
         # - /home/cadams/sbndcode/localProducts_larsoft_v06_50_00_e14_prof
@@ -26,7 +26,7 @@ stages:
     - generation:
         # REQUIRED: name of fcl
         fcl:
-            - /n/holylfs/LABS/guenette_lab/production/fcl/prodgenie_bnb_nu_cosmic_uboone_harvard.fcl
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/prodgenie_bnb_nu_cosmic_uboone_harvard.fcl
             - standard_g4_spacecharge_uboone.fcl
             - standard_detsim_uboone.fcl
             - reco_uboone_mcc8_driver_stage1_reduced.fcl

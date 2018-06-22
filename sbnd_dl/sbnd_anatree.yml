@@ -1,10 +1,10 @@
 # Global header information:
 name: "sbnd_dl_anatree"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree
+top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree
 
 
-software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/sbnd_dl/larsoft.yml"
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/larsoft.yml"
 
 # Block for defining stages.  Can include multiple stages
 stages:
@@ -19,7 +19,7 @@ stages:
             dataset: sbnd_dl_cosmics_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/cosmics
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/cosmics
             dataset: sbnd_dl_cosmics_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -36,7 +36,7 @@ stages:
             dataset: sbnd_dl_NC_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC
             dataset: sbnd_dl_NC_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -53,7 +53,7 @@ stages:
             dataset: sbnd_dl_NC_cosmics_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC_cosmics
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/NC_cosmics
             dataset: sbnd_dl_NC_cosmics_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -70,7 +70,7 @@ stages:
             dataset: sbnd_dl_nueCC_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC
             dataset: sbnd_dl_nueCC_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -87,7 +87,7 @@ stages:
             dataset: sbnd_dl_nueCC_cosmics_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC_cosmics
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/nueCC_cosmics
             dataset: sbnd_dl_nueCC_cosmics_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -104,7 +104,7 @@ stages:
             dataset: sbnd_dl_numuCC_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC
             dataset: sbnd_dl_numuCC_anatree
             anaonly: true
             ana_name: 'anatree'
@@ -121,7 +121,7 @@ stages:
             dataset: sbnd_dl_numuCC_cosmics_larsoft # Can be none or a name
             n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC_cosmics
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/anatree/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_anatree
             anaonly: true
             ana_name: 'anatree'
