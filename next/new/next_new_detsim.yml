@@ -1,17 +1,17 @@
 # Global header information:
 name: "next_new_detsim"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/
+top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/
 
 # Block for defining the larsoft setup. Reference a file
-software: "/n/holylfs/LABS/guenette_lab/production/yml-configs/next/new/artnext.yml"
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new/artnext.yml"
 
 # Block for defining stages.  Can include multiple stages
 stages:
 
     - tl:
         fcl:
-            - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
+            - /n/holylfs02/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
         n_jobs: 5
         max_concurrent_jobs: 200
         events_per_job: 25
@@ -19,7 +19,7 @@ stages:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_nexus # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/Tl
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/Tl
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_detsim
             anaonly: false
         memory: 4000
@@ -28,7 +28,7 @@ stages:
 
     - cs:
         fcl:
-            - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
+            - /n/holylfs02/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
         n_jobs: 5
         max_concurrent_jobs: 200
         events_per_job: 25
@@ -36,7 +36,7 @@ stages:
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_nexus # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/Cs
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/art/Cs
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_detsim
             anaonly: false
         memory: 4000
