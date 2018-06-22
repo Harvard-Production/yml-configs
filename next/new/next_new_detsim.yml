@@ -12,9 +12,9 @@ stages:
     - tl:
         fcl:
             - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
-        n_jobs: 5
-        max_concurrent_jobs: 200
-        events_per_job: 5
+        n_jobs: 180
+        max_concurrent_jobs: 180
+        events_per_job: -1
         input:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_nexus # Can be none or a name
             # n_files: 1
@@ -23,15 +23,15 @@ stages:
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_detsim
             anaonly: false
         memory: 4000
-        time: 06:00:00
+        time: 48:00:00
 
 
     - cs:
         fcl:
             - /n/holylfs/LABS/guenette_lab/users/cadams/next/releases/v1_03_01/configuration_files/CreateMCRD.fcl
-        n_jobs: 5
-        max_concurrent_jobs: 200
-        events_per_job: 25
+        n_jobs: 60
+        max_concurrent_jobs: 60
+        events_per_job: -1
         input:
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_nexus # Can be none or a name
             # n_files: 1
@@ -40,4 +40,4 @@ stages:
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_detsim
             anaonly: false
         memory: 4000
-        time: 06:00:00
+        time: 48:00:00
