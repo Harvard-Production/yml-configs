@@ -13,7 +13,7 @@ stages:
         fcl:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/create_pmaps.conf
         n_jobs: 165
-        city: diomira
+        city: irene
         max_concurrent_jobs: 165
         events_per_job: -1
         input:
@@ -31,7 +31,7 @@ stages:
         fcl:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/create_pmaps.conf
         n_jobs: 60
-        city: diomira
+        city: irene
         max_concurrent_jobs: 60
         events_per_job: -1
         input:
