@@ -23,6 +23,10 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/cosmics2
             dataset: sbnd_dl_cosmics_larsoft
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: cosmics
         memory: 8000
         time: 06:00:00
 
@@ -37,8 +41,12 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC2
-            dataset: sbnd_dl_NC_larsoft
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_highstats
+            dataset: sbnd_dl_NC_larsoft_highstats
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: NC
             anaonly: false
         memory: 4000
         time: 06:00:00
@@ -57,6 +65,10 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/NC_cosmics2
             dataset: sbnd_dl_NC_cosmics_larsoft
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: NC_cosmics
         memory: 8000
         time: 48:00:00
 
@@ -71,9 +83,13 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC2
-            dataset: sbnd_dl_nueCC_larsoft
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_highstats
+            dataset: sbnd_dl_nueCC_larsoft_highstats
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: nueCC
         memory: 4000
         time: 06:00:00
 
@@ -91,6 +107,10 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/nueCC_cosmics2
             dataset: sbnd_dl_nueCC_cosmics_larsoft
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: nueCC_cosmics
         memory: 8000
         time: 48:00:00
 
@@ -105,9 +125,13 @@ stages:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC2
-            dataset: sbnd_dl_numuCC_larsoft
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_highstats
+            dataset: sbnd_dl_numuCC_larsoft_highstats
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: numuCC
         memory: 4000
         time: 06:00:00
 
@@ -125,6 +149,10 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_cosmics2
             dataset: sbnd_dl_numuCC_cosmics_larsoft
             anaonly: false
+            experiment: sbnd
+            project: dl_samples
+            subproject: larsoft
+            slice: numuCC_cosmics
         memory: 8000
         time: 48:00:00
 
