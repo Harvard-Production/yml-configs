@@ -23,6 +23,11 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/pmaps/Tl
             dataset: NEW_Tl_disk_close_to_anode_7bar_5mev_pmaps
             anaonly: false
+            # Metadata information for the output dataset.  Inherits from parent if not specified here:
+            # experiment: next
+            # project: calibration
+            subproject: pmaps
+            # slice: tl
         memory: 4000
         time: 48:00:00
 
@@ -41,5 +46,6 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/pmaps/Cs
             dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_pmaps
             anaonly: false
+            subproject: pmaps
         memory: 4000
         time: 48:00:00
