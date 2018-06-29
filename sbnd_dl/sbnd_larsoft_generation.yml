@@ -119,7 +119,7 @@ stages:
             - prod_genie_CC_larg4_detsim_sbnd.fcl
         n_jobs: 2300
         event_target: 50000
-        max_concurrent_jobs: 100
+        max_concurrent_jobs: 200
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
