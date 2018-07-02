@@ -1,7 +1,7 @@
 # Global header information:
 name: "sbnd_dl_larcv"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv
+top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_highstats
 
 
 software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/gallery.yml"
@@ -22,22 +22,24 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/cosmics
             dataset: sbnd_dl_cosmics_larcv
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
     - NC:
         fcl:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 179
-        event_target: 20000
+        n_jobs: 445
+        event_target: 50000
         events_per_job: -1
         input:
-            dataset: sbnd_dl_NC_larsoft # Can be none or a name
+            dataset: sbnd_dl_NC_larsoft_highstats # Can be none or a name
             n_files: 5
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/NC
-            dataset: sbnd_dl_NC_larcv
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/NC_highstats
+            dataset: sbnd_dl_NC_larcv_highstats
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
@@ -54,22 +56,24 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/NC_cosmics
             dataset: sbnd_dl_NC_cosmics_larcv
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
     - nueCC:
         fcl:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 184
-        event_target: 20000
+        n_jobs: 443
+        event_target: 50000
         events_per_job: -1
         input:
-            dataset: sbnd_dl_nueCC_larsoft # Can be none or a name
+            dataset: sbnd_dl_nueCC_larsoft_highstats # Can be none or a name
             n_files: 5
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/nueCC
-            dataset: sbnd_dl_nueCC_larcv
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/nueCC_highstats
+            dataset: sbnd_dl_nueCC_larcv_highstats
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
@@ -86,22 +90,24 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/nueCC_cosmics
             dataset: sbnd_dl_nueCC_cosmics_larcv
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
     - numuCC:
         fcl:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 268
-        event_target: 20000
+        n_jobs: 442
+        event_target: 50000
         events_per_job: -1
         input:
-            dataset: sbnd_dl_numuCC_larsoft # Can be none or a name
+            dataset: sbnd_dl_numuCC_larsoft_highstats # Can be none or a name
             n_files: 5
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC
-            dataset: sbnd_dl_numuCC_larcv
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC_highstats
+            dataset: sbnd_dl_numuCC_larcv_highstats
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
@@ -118,6 +124,7 @@ stages:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC_cosmics
             dataset: sbnd_dl_numuCC_cosmics_larcv
             anaonly: true
+            subproject: larcv
         memory: 4000
         time: 06:00:00
 
