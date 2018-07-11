@@ -1,8 +1,7 @@
 # Global header information:
 name: "sbnd_dl_larcv"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_highstats
-
+top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv
 
 software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/gallery.yml"
 
@@ -97,15 +96,15 @@ stages:
     - numuCC:
         fcl:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
-        n_jobs: 442
+        n_jobs: 177
         event_target: 50000
         events_per_job: -1
         input:
-            dataset: sbnd_dl_numuCC_larsoft_highstats # Can be none or a name
+            dataset: sbnd_dl_numuCC_larsoft # Can be none or a name
             n_files: 5
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC_highstats
-            dataset: sbnd_dl_numuCC_larcv_highstats
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/numuCC
+            dataset: sbnd_dl_numuCC_larcv
             anaonly: true
             subproject: larcv
         memory: 4000
