@@ -10,7 +10,7 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/larsoft
 stages:
 
     - cosmics:
-        fcl:
+        config:
             - prod_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 203
         event_target: 20000
@@ -31,7 +31,7 @@ stages:
         time: 06:00:00
 
     - NC:
-        fcl:
+        config:
             - prod_genie_NC_larg4_detsim_sbnd.fcl
         n_jobs: 2300
         event_target: 50000
@@ -52,7 +52,7 @@ stages:
         time: 06:00:00
 
     - NC_cosmics:
-        fcl:
+        config:
             - prod_genie_NC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 554
         event_target: 20000
@@ -73,7 +73,7 @@ stages:
         time: 48:00:00
 
     - nueCC:
-        fcl:
+        config:
             - prod_nue_genie_CC_larg4_detsim_sbnd.fcl
         n_jobs: 2300
         event_target: 50000
@@ -94,7 +94,7 @@ stages:
         time: 06:00:00
 
     - nueCC_cosmics:
-        fcl:
+        config:
             - prod_nue_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 554
         event_target: 20000
@@ -115,7 +115,7 @@ stages:
         time: 48:00:00
 
     - numuCC:
-        fcl:
+        config:
             - prod_genie_CC_larg4_detsim_sbnd.fcl
         n_jobs: 920
         event_target: 20000
@@ -136,7 +136,7 @@ stages:
         time: 06:00:00
 
     - numuCC_cosmics:
-        fcl:
+        config:
             - prod_genie_CC_cosmics_larg4_detsim_sbnd.fcl
         n_jobs: 521
         event_target: 20000
