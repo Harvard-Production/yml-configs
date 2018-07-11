@@ -9,7 +9,7 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/gallery
 stages:
 
     - cosmics:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 81
         event_target: 20000
@@ -26,7 +26,7 @@ stages:
         time: 06:00:00
 
     - NC:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 445
         event_target: 50000
@@ -43,7 +43,7 @@ stages:
         time: 06:00:00
 
     - NC_cosmics:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 182
         event_target: 20000
@@ -60,7 +60,7 @@ stages:
         time: 06:00:00
 
     - nueCC:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 443
         event_target: 50000
@@ -77,7 +77,7 @@ stages:
         time: 06:00:00
 
     - nueCC_cosmics:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 184
         event_target: 20000
@@ -94,7 +94,7 @@ stages:
         time: 06:00:00
 
     - numuCC:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 177
         event_target: 50000
@@ -111,7 +111,7 @@ stages:
         time: 06:00:00
 
     - numuCC_cosmics:
-        fcl:
+        config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/gallery-framework/UserDev/SuperaLight/supera_sbnd.py
         n_jobs: 177
         event_target: 20000
