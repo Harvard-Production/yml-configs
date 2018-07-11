@@ -1,0 +1,4 @@
+type: larcv
+# REQUIRED: Setup script
+setup_scripts:
+    - /n/holylfs02/LABS/guenette_lab/users/cadams/larcv2/setup.sh

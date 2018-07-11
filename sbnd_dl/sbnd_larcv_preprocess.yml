@@ -1,0 +1,90 @@
+# Global header information:
+name: "sbnd_dl_larcv_preprocess"
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess
+
+
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/larcv.yml"
+
+# Block for defining stages.  Can include multiple stages
+stages:
+
+    - test:
+        config:
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+        n_jobs: 2
+        event_target: 70000
+        events_per_job: 50
+        input:
+            dataset:
+              - sbnd_dl_nueCC_larcv
+              - sbnd_dl_NC_larcv_highstats
+            n_files: 2
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/test
+            dataset: sbnd_dl_test_larcv_preprocessed
+            anaonly: false
+            subproject: larcv_preprocses
+        memory: 4000
+        time: 06:00:00
+
+
+
+    - NC:
+        config:
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+        n_jobs: 125 # 445 + 179 = 624, 624 / 5 = 124.8
+        event_target: 70000
+        events_per_job: -1
+        input:
+            dataset:
+              - sbnd_dl_NC_larcv
+              - sbnd_dl_NC_larcv_highstats
+            n_files: 5
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/NC
+            dataset: sbnd_dl_NC_larcv_preprocessed
+            anaonly: false
+            subproject: larcv_preprocses
+        memory: 4000
+        time: 06:00:00
+
+    - nueCC:
+        config:
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+        n_jobs: 126 # 443 + 184 = 627, 627 / 5 = 125.4
+        event_target: 70000
+        events_per_job: -1
+        input:
+            dataset:
+              - sbnd_dl_nueCC_larcv
+              - sbnd_dl_nueCC_larcv_highstats
+            n_files: 5
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/nueCC
+            dataset: sbnd_dl_nueCC_larcv_preprocessed
+            anaonly: false
+            subproject: larcv_preprocses
+        memory: 4000
+        time: 06:00:00
+
+    - numuCC:
+        config:
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+        n_jobs:  124 # 442 + 177 = 619.  619 / 5 = 123.8
+        event_target: 70000
+        events_per_job: -1
+        input:
+            dataset:
+              - sbnd_dl_numuCC_larcv
+              - sbnd_dl_numuCC_larcv_highstat
+s            n_files: 5
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/numuCC
+            dataset: sbnd_dl_numuCC_larcv_preprocessed
+            anaonly: false
+            subproject: larcv_preprocses
+        memory: 4000
+        time: 06:00:00
+
+
