@@ -117,16 +117,16 @@ stages:
     - numuCC:
         fcl:
             - prod_genie_CC_larg4_detsim_sbnd.fcl
-        n_jobs: 2300
-        event_target: 50000
-        max_concurrent_jobs: 100
+        n_jobs: 920
+        event_target: 20000
+        max_concurrent_jobs: 500
         events_per_job: 50
         input:
             dataset: none # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC_highstats
-            dataset: sbnd_dl_numuCC_larsoft_highstats
+            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larsoft/numuCC
+            dataset: sbnd_dl_numuCC_larsoft
             anaonly: false
             experiment: sbnd
             project: dl_samples
