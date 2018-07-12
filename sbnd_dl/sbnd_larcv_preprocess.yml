@@ -33,14 +33,14 @@ stages:
     - NC:
         config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
-        n_jobs: 125 # 445 + 179 = 624, 624 / 5 = 124.8
+        n_jobs: 1069 # 445 + 445 + 179 = 1069, 624 / 5 = 124.8
         event_target: 70000
         events_per_job: -1
         input:
             dataset:
               - sbnd_dl_NC_larcv
               - sbnd_dl_NC_larcv_highstats
-            n_files: 5
+            n_files: 1
         output:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/NC
             dataset: sbnd_dl_NC_larcv_preprocessed
@@ -52,14 +52,14 @@ stages:
     - nueCC:
         config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
-        n_jobs: 126 # 443 + 184 = 627, 627 / 5 = 125.4
+        n_jobs: 627 # 443 + 184 = 627, 627 / 5 = 125.4
         event_target: 70000
         events_per_job: -1
         input:
             dataset:
               - sbnd_dl_nueCC_larcv
               - sbnd_dl_nueCC_larcv_highstats
-            n_files: 5
+            n_files: 1
         output:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/nueCC
             dataset: sbnd_dl_nueCC_larcv_preprocessed
@@ -71,14 +71,14 @@ stages:
     - numuCC:
         config:
           - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
-        n_jobs:  124 # 442 + 177 = 619.  619 / 5 = 123.8
+        n_jobs:  619 # 442 + 177 = 619.  619 / 5 = 123.8
         event_target: 70000
         events_per_job: -1
         input:
             dataset:
               - sbnd_dl_numuCC_larcv
               - sbnd_dl_numuCC_larcv_highstats
-            n_files: 5
+            n_files: 1
         output:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/numuCC
             dataset: sbnd_dl_numuCC_larcv_preprocessed
