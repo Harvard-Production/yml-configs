@@ -40,6 +40,7 @@ stages:
             dataset:
               - sbnd_dl_NC_larcv
               - sbnd_dl_NC_larcv_highstats
+              - sbnd_dl_NC_larcv_highstats2
             n_files: 5
         output:
             location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv_preprocess/NC
