@@ -1,0 +1,4 @@
+type: artnext
+# REQUIRED: Setup script
+setup_scripts:
+    - /n/holylfs02/LABS/guenette_lab/users/cadams/next/Releases/NEXT_v1_04_00/setup.sh
