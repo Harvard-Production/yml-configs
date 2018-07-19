@@ -10,7 +10,7 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new_bkg_si
 stages:
 
     - evtmxr:
-        fcl:
+        config:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DepletedXe_detsim
         n_jobs: 700
         # max_concurrent_jobs: 180
