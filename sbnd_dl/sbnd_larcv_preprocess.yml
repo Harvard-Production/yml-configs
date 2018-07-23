@@ -9,30 +9,9 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/sbnd_dl/larcv.y
 # Block for defining stages.  Can include multiple stages
 stages:
 
-    - test:
-        config:
-          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
-        n_jobs: 2
-        event_target: 70000
-        events_per_job: 50
-        input:
-            dataset:
-              - sbnd_dl_nueCC_larcv
-              - sbnd_dl_NC_larcv_highstats
-            n_files: 2
-        output:
-            location: /n/holylfs02/LABS/guenette_lab/data/production/sbnd_dl/larcv/test
-            dataset: sbnd_dl_test_larcv_preprocessed
-            anaonly: false
-            subproject: larcv_preprocses
-        memory: 4000
-        time: 06:00:00
-
-
-
     - NC:
         config:
-          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/larcv_scripts/preprocess.fcl
         n_jobs: 1069 # 445 + 445 + 179 = 1069, 624 / 5 = 124.8
         event_target: 70000
         events_per_job: -1
@@ -52,7 +31,7 @@ stages:
 
     - nueCC:
         config:
-          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/larcv_scripts/preprocess.fcl
         n_jobs: 627 # 443 + 184 = 627, 627 / 5 = 125.4
         event_target: 70000
         events_per_job: -1
@@ -71,7 +50,7 @@ stages:
 
     - numuCC:
         config:
-          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/preprocess.fcl
+          - /n/holylfs02/LABS/guenette_lab/users/cadams/SBNDEventIdentification/larcv_scripts/preprocess.fcl
         n_jobs:  619 # 442 + 177 = 619.  619 / 5 = 123.8
         event_target: 70000
         events_per_job: -1
