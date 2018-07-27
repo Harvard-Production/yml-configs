@@ -9,18 +9,17 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new/icnext
 # Block for defining stages.  Can include multiple stages
 stages:
 
-    - tl:
-        fcl:
+    - evtmxr:
+        config:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/createPMAP_lowbackground.conf
         n_jobs: 700
         city: irene
-        max_concurrent_jobs: 165
         events_per_job: -1
         input:
             dataset: nexus_NEW_DepletedXe_rwf # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/pmaps/Tl
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/pmaps
             dataset: nexus_NEW_DepletedXe_pmaps
             anaonly: false
             # Metadata information for the output dataset.  Inherits from parent if not specified here:
@@ -31,21 +30,3 @@ stages:
         memory: 4000
         time: 48:00:00
 
-
-    - cs:
-        fcl:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/create_pmaps.conf
-        n_jobs: 60
-        city: irene
-        max_concurrent_jobs: 60
-        events_per_job: -1
-        input:
-            dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_rwf # Can be none or a name
-            # n_files: 1
-        output:
-            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Calibration/pmaps/Cs
-            dataset: NEW_Cs_int_port_anode_7bar_0mm_10mev_pmaps
-            anaonly: false
-            subproject: pmaps
-        memory: 4000
-        time: 48:00:00
