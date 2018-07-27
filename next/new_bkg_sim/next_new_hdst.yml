@@ -1,0 +1,32 @@
+# Global header information:
+name: "next_new_pmaps"
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/hdst/
+
+# Block for defining the larsoft setup. Reference a file
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new/icnext.yml"
+
+# Block for defining stages.  Can include multiple stages
+stages:
+
+    - evtmxr:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/createHDST_lowbackground.conf
+        n_jobs: 700
+        city: penthesilea
+        events_per_job: -1
+        input:
+            dataset: nexus_NEW_DepletedXe_pmaps # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/hdst
+            dataset: nexus_NEW_DepletedXe_hdst
+            anaonly: false
+            # Metadata information for the output dataset.  Inherits from parent if not specified here:
+            # experiment: next
+            # project: calibration
+            subproject: hdst
+            # slice: tl
+        memory: 4000
+        time: 48:00:00
+
