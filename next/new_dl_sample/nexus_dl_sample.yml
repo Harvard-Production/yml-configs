@@ -1,0 +1,78 @@
+# Global header information:
+name: nexus_K_ANODE_QUARTZ
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/nexus/
+
+# Block for defining the larsoft setup. Reference a file
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new_dl_sample/nexus.yml"
+
+stages:
+
+    - test:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
+        init:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
+        n_jobs: 5
+        max_concurrent_jobs: 1
+        events_per_job: 50
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/nexus/single_test/
+            dataset: NEW_SINGLE_E_10bar_nexus_test
+            anaonly: false
+            # Metadata information for the output dataset.  Inherits from parent if not specified here:
+            experiment: next
+            project: dl_sample
+            subproject: nexus
+            slice: single_test
+        memory: 4000
+        time: 48:00:00
+
+    - single:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
+        init:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
+        n_jobs: 400
+        max_concurrent_jobs: 1
+        events_per_job: 2500
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/nexus/single/
+            dataset: NEW_SINGLE_E_10bar_nexus
+            anaonly: false
+            # Metadata information for the output dataset.  Inherits from parent if not specified here:
+            experiment: next
+            project: dl_sample
+            subproject: nexus
+            slice: single
+        memory: 4000
+        time: 48:00:00
+
+    - double:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_config.mac
+        init:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_init.mac
+        n_jobs: 400
+        max_concurrent_jobs: 1
+        events_per_job: 2500
+        input:
+            dataset: none # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/nexus/single/
+            dataset: NEW_DOUBLE_E_10bar_nexus
+            anaonly: false
+            # Metadata information for the output dataset.  Inherits from parent if not specified here:
+            experiment: next
+            project: dl_sample
+            subproject: nexus
+            slice: double
+        memory: 4000
+        time: 48:00:00
