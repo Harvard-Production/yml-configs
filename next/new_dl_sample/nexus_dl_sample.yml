@@ -1,5 +1,5 @@
 # Global header information:
-name: nexus_K_ANODE_QUARTZ
+name: nexus_dl_samples
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
 top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/nexus/
 
@@ -9,10 +9,8 @@ software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new_dl_sam
 stages:
 
     - test:
-        config:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
-        init:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
+        config: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
+        init: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
         n_jobs: 5
         max_concurrent_jobs: 1
         events_per_job: 50
@@ -32,10 +30,8 @@ stages:
         time: 48:00:00
 
     - single:
-        config:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
-        init:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
+        config: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_config.mac
+        init: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_SINGLE_E_template_init.mac
         n_jobs: 400
         max_concurrent_jobs: 1
         events_per_job: 2500
@@ -55,10 +51,8 @@ stages:
         time: 48:00:00
 
     - double:
-        config:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_config.mac
-        init:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_init.mac
+        config: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_config.mac
+        init: /n/holylfs02/LABS/guenette_lab/production/fcl/next/DL_nexus_configs/nexus_ACTIVE_EPEM_template_init.mac
         n_jobs: 400
         max_concurrent_jobs: 1
         events_per_job: 2500
