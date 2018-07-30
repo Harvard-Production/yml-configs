@@ -20,7 +20,7 @@ stages:
             dataset: nexus_NEW_DepletedXe_detsim # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/art/
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/rwf/
             dataset: nexus_NEW_DepletedXe_rwf
             subproject: rwf
             anaonly: false
