@@ -1,0 +1,27 @@
+# Global header information:
+name: "next_radon_rwf"
+# REQUIRED: top project dirctory, work files go here, output files can be elsewhere
+top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon/rwf/
+
+# Block for defining the larsoft setup. Reference a file
+software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new_radon/icnext.yml"
+
+# Block for defining stages.  Can include multiple stages
+stages:
+    - radon:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/RadonMC_diomira.conf
+        n_jobs: 500
+        city: diomira
+        # max_concurrent_jobs: 500
+        events_per_job: -1
+        input:
+            dataset: nexus_NEW_DepletedXe_detsim # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Other/NEXUS_NEXT_v1_04_00/rwf/
+            dataset: nexus_NEW_DepletedXe_rwf
+            subproject: rwf
+            anaonly: false
+        memory: 4000
+        time: 48:00:00
