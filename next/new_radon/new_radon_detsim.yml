@@ -27,3 +27,23 @@ stages:
             slice: detsim
         memory: 4000
         time: 48:00:00
+
+    - radon15bar:
+        config:
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/fcl_NEXT_v1_02_00_Bi_CATHODE_248.fcl
+        n_jobs: 250
+        # max_concurrent_jobs: 180
+        events_per_job: -1
+        input:
+            dataset: NEW_Radon15bar_nexus # Can be none or a name
+            # n_files: 1
+        output:
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon/art/
+            dataset: NEW_Radon_detsim
+            anaonly: false
+            experiment: next
+            project: Radon15bar
+            subproject: Radon15bar
+            slice: detsim
+        memory: 4000
+        time: 48:00:00
