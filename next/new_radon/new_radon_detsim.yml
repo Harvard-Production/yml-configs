@@ -1,7 +1,7 @@
 # Global header information:
 name: "next_radon_detsim"
 # REQUIRED: top project dirctory, work files go here, output files can be elsewhere
-top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon/art/
+top_dir: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon15bar/art/
 
 # Block for defining the larsoft setup. Reference a file
 software: "/n/holylfs02/LABS/guenette_lab/production/yml-configs/next/new_radon/artnext.yml"
@@ -38,8 +38,8 @@ stages:
             dataset: NEW_Radon15bar_nexus # Can be none or a name
             # n_files: 1
         output:
-            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon/art/
-            dataset: NEW_Radon_detsim
+            location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/Radon15bar/art/
+            dataset: NEW_Radon15bar_detsim
             anaonly: false
             experiment: next
             project: Radon15bar
