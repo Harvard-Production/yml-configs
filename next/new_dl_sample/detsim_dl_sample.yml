@@ -15,7 +15,6 @@ stages:
         n_jobs: 400
         events_per_job: -1
         input:
-            dataset: NEW_SINGLE_E_10bar_nexus # Can be none or a name
             # n_files: 1
         output:
             location: /n/holylfs02/LABS/guenette_lab/data/NEXT/NEXTNEW/MC/DL_SAMPLE/NEXUS_NEXT_v1_03_01/art/single/
