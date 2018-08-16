@@ -30,7 +30,7 @@ stages:
 
     - radon15bar:
         config:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/fcl_NEXT_v1_02_00_Bi_CATHODE_248.fcl
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/fcl_NEXT_v1_02_00_Bi_CATHODE_15bar.fcl
         n_jobs: 250
         # max_concurrent_jobs: 180
         events_per_job: -1

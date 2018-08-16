@@ -28,7 +28,7 @@ stages:
 
     - radon15bar:
         config:
-            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/RadonMC_diomira.conf
+            - /n/holylfs02/LABS/guenette_lab/production/fcl/next/radon/RadonMC_diomira_15bar.conf
         n_jobs: 500
         city: diomira
         # max_concurrent_jobs: 500
