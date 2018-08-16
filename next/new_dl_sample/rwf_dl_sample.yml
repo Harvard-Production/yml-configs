@@ -14,6 +14,7 @@ stages:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/createRWF_lowbackgroundrun.conf
         n_jobs: 400
         events_per_job: -1
+        city: diomira
         input:
             dataset: NEW_SINGLE_E_10bar_detsim
             # n_files: 1
@@ -30,6 +31,7 @@ stages:
             - /n/holylfs02/LABS/guenette_lab/production/fcl/next/createRWF_lowbackgroundrun.conf
         n_jobs: 400
         events_per_job: -1
+        city: diomira
         input:
             dataset: NEW_DOUBLE_E_10bar_detsim
             # n_files: 1
